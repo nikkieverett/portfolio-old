@@ -3,8 +3,8 @@ import React from 'react';
 class AboutMe extends React.Component {
   render(){
     return(
-      <section className="about-me">
-        <h1>about me</h1>
+      <section className="about-me" id="about-me">
+        <h2>about me</h2>
         <h3>Hello, I’m a UI/UX Designer & Frontend Developer from Dallas, Texas.</h3>
         <ul className="contact-info">
           <li>name: nikki everett</li>

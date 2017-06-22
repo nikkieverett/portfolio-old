@@ -3,8 +3,8 @@ import React from 'react';
 class Portfolio extends React.Component {
   render(){
     return(
-    <section className="portfolio">
-      <h1>portfolio</h1>
+    <section className="portfolio" id="portfolio">
+      <h2>portfolio</h2>
       <div>put works here</div>
     </section>
   )

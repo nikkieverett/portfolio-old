@@ -3,7 +3,8 @@ import React from 'react';
 class Skills extends React.Component {
   render(){
     return(
-      <section className="skills">
+      <section className="skills" id="skills">
+        <h2>skills</h2>
         <div className="skill" id="html">
           <h3>html 5 / css 3</h3>
         </div>

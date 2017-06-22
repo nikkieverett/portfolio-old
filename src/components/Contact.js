@@ -3,9 +3,9 @@ import React from 'react';
 class Contact extends React.Component {
   render(){
     return(
-      <section className="contact">
-        <h1>contact</h1>
-        <h2>general inquiries: nikki.everett@outlook.com</h2>
+      <section className="contact" id="contact">
+        <h2>contact</h2>
+        <h3>general inquiries: nikki.everett@outlook.com</h3>
         <form>
           <input type="text" placeholder="* your name"></input>
           <input type="text" placeholder="* your email"></input>
