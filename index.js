@@ -14,20 +14,7 @@ import Skills from './components/Skills.js';
 class App extends React.Component {
   render(){
     return(
-      <div className="page-container">
-        <div className="left-side">
-          <NavBar />
-        </div>
-        <div className="right-side">
-          <Header />
-          <AboutMe />
-          <Skills />
-          <Portfolio />
-          <Blog />
-          <Contact />
-          <Footer />
-        </div>
-      </div>
+
     )
   }
 }

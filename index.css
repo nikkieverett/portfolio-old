@@ -43,7 +43,9 @@ table {
 
 nav {
   padding: 40px; }
-  nav .logo img {
+  nav .logo {
+    background-image: url("me.jpeg");
+    height: 100%;
     width: 100%;
     border-radius: 100px; }
   nav .page-links {
