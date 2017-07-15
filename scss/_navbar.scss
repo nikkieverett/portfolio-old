@@ -3,12 +3,17 @@
 nav{
   padding: 40px;
   .logo {
-    background-image: url('me.jpeg');
-    height: 100%;
-    width:100%;
+    background-image: url('./me.jpeg');
+    background-size: contain;
+    height: 150px;
+    width:150px;
     border-radius: 100px;
+    margin: 0 auto;
   }
-
+  a {
+    text-decoration: none;
+    color: $main-font-color;
+  }
   .page-links {
     margin-top: 40px;
     li {
@@ -28,10 +33,9 @@ nav{
         transition-duration: .2s;
         -webkit-transition-duration: .2s;
       }
-      a:hover::before, a:active::before{
+      a:hover::before, .clicked::before{
         width: 130px;
         border-bottom: 1px solid $salmon-color;
-
       }
     }
   }

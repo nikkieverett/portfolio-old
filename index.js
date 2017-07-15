@@ -1,22 +1,49 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+var navLink = document.querySelector('.page-links');
+var section = document.querySelector('section');
 
-import AboutMe from './components/AboutMe.js';
-import Blog from './components/Blog.js';
-import Contact from './components/Contact.js';
-import Footer from './components/Footer.js';
-import Header from './components/Header.js';
-import NavBar from './components/NavBar.js';
-import Portfolio from './components/Portfolio.js';
-import Skills from './components/Skills.js';
-
-class App extends React.Component {
-  render(){
-    return(
-
-    )
+navLink.addEventListener('click', function(evt){
+  let previous = document.querySelector('.clicked');
+  if(previous !== null){
+    previous.classList.remove('clicked');
   }
+  if(evt.target.tagName === 'A'){
+    evt.target.classList.add('clicked');
+    previous = evt.target;
+  }
+});
+
+window.addEventListener("scroll", function(){
+  let viewportHeight = window.innerHeight || document.documentElement.offsetHeight;
+  let pageScrollTop = document.body.scrollTop;
+  console.log(pageScrollTop);
+
+  if( pageScrollTop > 670 && pageScrollTop){
+  }
+});
+// document.documentElement.scrollTop ||
+
+
+function changeCurrentNav(evt, currentHash){
+
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//778
+
+// function onHashChange(hash){
+//   console.log(hash);
+// }
+
+// let url = `file:///Users/nikki_everett/Dev/portfolio/index.html`;
+// navLink.addEventListener('scroll', function(evt){
+//   let previous = document.querySelector('.clicked');
+//   if(previous !== null){
+//     previous.classList.remove('clicked');
+//     console.log('removing class')
+//   }
+//   if(evt.target.tagName === 'A' || evt.target.tagName === 'LI'){
+//     evt.target.classList.add('clicked');
+//     previous = evt.target;
+//     console.log('adding class');
+//
+//   }
+// });

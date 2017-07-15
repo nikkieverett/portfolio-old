@@ -44,10 +44,15 @@ table {
 nav {
   padding: 40px; }
   nav .logo {
-    background-image: url("me.jpeg");
-    height: 100%;
-    width: 100%;
-    border-radius: 100px; }
+    background-image: url("./me.jpeg");
+    background-size: contain;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    margin: 0 auto; }
+  nav a {
+    text-decoration: none;
+    color: #393939; }
   nav .page-links {
     margin-top: 40px; }
     nav .page-links li {
@@ -66,9 +71,40 @@ nav {
         width: 6px;
         transition-duration: .2s;
         -webkit-transition-duration: .2s; }
-      nav .page-links li a:hover::before, nav .page-links li a:active::before {
+      nav .page-links li a:hover::before, nav .page-links li .clicked::before {
         width: 130px;
         border-bottom: 1px solid #ab2e78; }
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("Sarah-Marino-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  z-index: -2;
+  text-transform: uppercase;
+  letter-spacing: 0.26px; }
+  header .overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1; }
+  header h1 {
+    font-size: 50px;
+    font-weight: 600; }
+  header h2 {
+    font-size: 35px;
+    font-weight: 300; }
+  header h3 {
+    background-color: black;
+    display: inline-block;
+    padding: 10px;
+    font-size: 13px;
+    margin: 20px 70px; }
 
 body {
   margin: 0;
@@ -86,43 +122,13 @@ body {
   right: 0;
   top: 0; }
 
-a {
-  text-decoration: none;
-  color: #393939; }
-
 header, .about-me, .blog, .contact, footer, .portfolio, .skills {
   padding: 130px 0;
-  height: 450px; }
+  max-height: 100vh;
+  min-height: 100vh; }
   header h2, .about-me h2, .blog h2, .contact h2, footer h2, .portfolio h2, .skills h2 {
     text-transform: uppercase;
     font-size: 28px;
     font-weight: 600; }
   header h1, header h2, header h3, header p, header li, .about-me h1, .about-me h2, .about-me h3, .about-me p, .about-me li, .blog h1, .blog h2, .blog h3, .blog p, .blog li, .contact h1, .contact h2, .contact h3, .contact p, .contact li, footer h1, footer h2, footer h3, footer p, footer li, .portfolio h1, .portfolio h2, .portfolio h3, .portfolio p, .portfolio li, .skills h1, .skills h2, .skills h3, .skills p, .skills li {
     padding-left: 70px; }
-
-header {
-  background-image: url("Sarah-Marino-1.jpg");
-  position: relative;
-  color: white;
-  z-index: -2;
-  text-transform: uppercase;
-  letter-spacing: 0.26px; }
-  header .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1; }
-  header h1 {
-    font-size: 50px;
-    font-weight: 600; }
-  header h2 {
-    font-size: 35px;
-    font-weight: 300; }
-  header h3 {
-    background-color: black;
-    display: inline-block;
-    padding: 10px;
-    font-size: 13px;
-    margin: 20px 70px; }
