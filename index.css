@@ -43,13 +43,6 @@ table {
 
 nav {
   padding: 40px; }
-  nav .logo {
-    background-image: url("./me.jpeg");
-    background-size: contain;
-    height: 150px;
-    width: 150px;
-    border-radius: 100px;
-    margin: 0 auto; }
   nav a {
     text-decoration: none;
     color: #393939; }
@@ -106,6 +99,36 @@ header {
     font-size: 13px;
     margin: 20px 70px; }
 
+.about-me {
+  max-height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 50px; }
+  .about-me h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600; }
+  .about-me article {
+    width: 70%;
+    padding: 20px; }
+  .about-me .logo {
+    background-image: url("./me.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 280px;
+    width: 28%;
+    border-radius: 200px;
+    margin: 0 auto; }
+  .about-me .button {
+    padding: 10px;
+    border: black 2px solid;
+    display: inline-block; }
+  .about-me h2, .about-me .button, .about-me p {
+    margin: 20px; }
+  .about-me p {
+    line-height: 1.7em; }
+
 body {
   margin: 0;
   padding: 0;
@@ -122,13 +145,13 @@ body {
   right: 0;
   top: 0; }
 
-header, .about-me, .blog, .contact, footer, .portfolio, .skills {
+header, .blog, .contact, footer, .portfolio, .skills {
   padding: 130px 0;
   max-height: 100vh;
   min-height: 100vh; }
-  header h2, .about-me h2, .blog h2, .contact h2, footer h2, .portfolio h2, .skills h2 {
+  header h2, .blog h2, .contact h2, footer h2, .portfolio h2, .skills h2 {
     text-transform: uppercase;
     font-size: 28px;
     font-weight: 600; }
-  header h1, header h2, header h3, header p, header li, .about-me h1, .about-me h2, .about-me h3, .about-me p, .about-me li, .blog h1, .blog h2, .blog h3, .blog p, .blog li, .contact h1, .contact h2, .contact h3, .contact p, .contact li, footer h1, footer h2, footer h3, footer p, footer li, .portfolio h1, .portfolio h2, .portfolio h3, .portfolio p, .portfolio li, .skills h1, .skills h2, .skills h3, .skills p, .skills li {
+  header h1, header h2, header h3, header p, header li, .blog h1, .blog h2, .blog h3, .blog p, .blog li, .contact h1, .contact h2, .contact h3, .contact p, .contact li, footer h1, footer h2, footer h3, footer p, footer li, .portfolio h1, .portfolio h2, .portfolio h3, .portfolio p, .portfolio li, .skills h1, .skills h2, .skills h3, .skills p, .skills li {
     padding-left: 70px; }

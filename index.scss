@@ -1,12 +1,14 @@
 @import './scss/reset';
 @import './scss/navbar';
 @import './scss/header';
+@import './scss/aboutMe';
 
 body {
   margin: 0;
   padding: 0;
   font-family: $main-font;
   font-weight: 300;
+
 }
 .left-side {
   width: 20%;
@@ -19,7 +21,7 @@ body {
   top: 0;
 }
 
-header, .about-me, .blog, .contact, footer, .portfolio, .skills {
+header, .blog, .contact, footer, .portfolio, .skills {
   padding: 130px 0;
   max-height: 100vh;
   min-height: 100vh;
@@ -31,5 +33,5 @@ header, .about-me, .blog, .contact, footer, .portfolio, .skills {
   h1, h2, h3, p, li {
     padding-left: 70px;
   }
-  
+
 }
