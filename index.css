@@ -71,7 +71,7 @@ nav {
 header {
   height: 100vh;
   width: 100%;
-  background-image: url("Sarah-Marino-1.jpg");
+  background-image: url("./images/Sarah-Marino-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -113,10 +113,10 @@ header {
     width: 70%;
     padding: 20px; }
   .about-me .logo {
-    background-image: url("./me.jpeg");
+    background-image: url("./images/me.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 280px;
+    height: 250px;
     width: 28%;
     border-radius: 200px;
     margin: 0 auto; }
@@ -128,6 +128,12 @@ header {
     margin: 20px; }
   .about-me p {
     line-height: 1.7em; }
+
+#skills {
+  display: flex;
+  flex-wrap: wrap; }
+  #skills #skills-header {
+    width: 100%; }
 
 body {
   margin: 0;

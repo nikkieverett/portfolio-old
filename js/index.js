@@ -1,3 +1,4 @@
+
 var navLink = document.querySelector('.page-links');
 var section = document.querySelector('section');
 
@@ -12,20 +13,28 @@ navLink.addEventListener('click', function(evt){
   }
 });
 
-window.addEventListener("scroll", function(){
-  let viewportHeight = window.innerHeight || document.documentElement.offsetHeight;
-  let pageScrollTop = document.body.scrollTop;
-  console.log(pageScrollTop);
-
-  if( pageScrollTop > 670 && pageScrollTop){
-  }
+var controller = new ScrollMagic.Controller();
+var scene = new ScrollMagic.Scene({
+  offset: 100, // start scene after scrolling for 100px
+  duration: 400 // pin the element for 400px of scrolling
 });
-// document.documentElement.scrollTop ||
 
 
-function changeCurrentNav(evt, currentHash){
 
-}
+// window.addEventListener("scroll", function(){
+//   let viewportHeight = window.innerHeight || document.documentElement.offsetHeight;
+//   let pageScrollTop = document.body.scrollTop;
+//   console.log(pageScrollTop);
+//
+//   if( pageScrollTop > 670 && pageScrollTop){
+//   }
+// });
+// // document.documentElement.scrollTop ||
+//
+//
+// function changeCurrentNav(evt, currentHash){
+//
+// }
 
 //778
 
