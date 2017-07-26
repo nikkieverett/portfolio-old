@@ -1,42 +1,66 @@
 header {
-  height: 100vh;
   width: 100%;
   background-image: url('./images/Sarah-Marino-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
   color: white;
-  z-index: -2;
+  z-index: 1;
   text-transform: uppercase;
   letter-spacing: 0.26px;
-
   .overlay {
     position: absolute;
     width: 100%;
     top: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
-    z-index: -1;
+    z-index: 2;
   }
-
-  h1 {
-    font-size: 50px;
-    font-weight: 600;
-    // padding-left: 70px;
-
+  .header-text {
+    z-index: 3;
+    position: absolute;
+    h1 {
+      font-size: 50px;
+      font-weight: 600;
+      padding-left: 70px;
+    }
+    h2 {
+      font-size: 35px;
+      font-weight: 300;
+      padding-left: 70px;
+    }
+    h3 {
+      background-color: black;
+      display: inline-block;
+      padding: 10px;
+      font-size: 13px;
+      margin: 20px 70px;
+      letter-spacing: 10px;
+    }
   }
-  h2 {
-    font-size: 35px;
-    font-weight: 300;
-    // padding-left: 70px;
-
+}
+.links {
+  position: fixed;
+  bottom:50px;
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  ul {
+    display: flex;
+    justify-content: center;
   }
-  h3 {
-    background-color: black;
-    display: inline-block;
-    padding: 10px;
-    font-size: 13px;
-    margin: 20px 70px;
-
+  li {
+    margin-right: 50px;
+  }
+  a {
+    color: rgba(236, 236, 236, 1.0);
+    text-decoration: none;
+    letter-spacing: 5px;
+    transition: .5s;
+  }
+  a:hover{
+    font-size: 1.1em;
   }
 }

@@ -49,7 +49,6 @@ nav {
   nav .page-links {
     margin-top: 40px; }
     nav .page-links li {
-      border-bottom: 1px solid #e5e5e5;
       padding: 20px;
       position: relative;
       text-transform: uppercase;
@@ -59,24 +58,25 @@ nav {
         content: "";
         position: absolute;
         left: -3px;
-        top: 25px;
-        border-bottom: 2px solid #ab2e78;
+        top: 10px;
+        background-color: 2px solid rgba(171, 46, 120, 0.7);
         width: 6px;
         transition-duration: .2s;
         -webkit-transition-duration: .2s; }
       nav .page-links li a:hover::before, nav .page-links li .clicked::before {
         width: 130px;
-        border-bottom: 1px solid #ab2e78; }
+        height: 30px;
+        background-color: rgba(171, 46, 120, 0.7);
+        color: white; }
 
 header {
-  height: 100vh;
   width: 100%;
   background-image: url("./images/Sarah-Marino-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
   color: white;
-  z-index: -2;
+  z-index: 1;
   text-transform: uppercase;
   letter-spacing: 0.26px; }
   header .overlay {
@@ -85,26 +85,54 @@ header {
     top: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1; }
-  header h1 {
-    font-size: 50px;
-    font-weight: 600; }
-  header h2 {
-    font-size: 35px;
-    font-weight: 300; }
-  header h3 {
-    background-color: black;
-    display: inline-block;
-    padding: 10px;
-    font-size: 13px;
-    margin: 20px 70px; }
+    z-index: 2; }
+  header .header-text {
+    z-index: 3;
+    position: absolute; }
+    header .header-text h1 {
+      font-size: 50px;
+      font-weight: 600;
+      padding-left: 70px; }
+    header .header-text h2 {
+      font-size: 35px;
+      font-weight: 300;
+      padding-left: 70px; }
+    header .header-text h3 {
+      background-color: black;
+      display: inline-block;
+      padding: 10px;
+      font-size: 13px;
+      margin: 20px 70px;
+      letter-spacing: 10px; }
+
+.links {
+  position: fixed;
+  bottom: 50px;
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase; }
+  .links ul {
+    display: flex;
+    justify-content: center; }
+  .links li {
+    margin-right: 50px; }
+  .links a {
+    color: #ececec;
+    text-decoration: none;
+    letter-spacing: 5px;
+    transition: .5s; }
+  .links a:hover {
+    font-size: 1.1em; }
 
 .about-me {
   max-height: 100vh;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 0 50px; }
+  padding: 0 50px;
+  position: absolute; }
   .about-me h2 {
     text-transform: uppercase;
     font-size: 28px;
@@ -129,17 +157,47 @@ header {
   .about-me p {
     line-height: 1.7em; }
 
-#skills {
+.skills-images {
   display: flex;
-  flex-wrap: wrap; }
-  #skills #skills-header {
-    width: 100%; }
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto;
+  position: absolute; }
+  .skills-images #html, .skills-images #css, .skills-images #js, .skills-images #react, .skills-images #express, .skills-images #mongo {
+    width: 18%;
+    height: 150px;
+    background-size: cover;
+    margin: 1%;
+    background-position: center;
+    position: relative; }
+  .skills-images #html {
+    background-image: url(./images/html.png);
+    background-position: center;
+    width: 16%; }
+  .skills-images #css {
+    background-image: url(./images/html-css.svg);
+    background-size: 95%;
+    width: 12%; }
+  .skills-images #js {
+    background-image: url(./images/js.png);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .skills-images #react {
+    background-image: url(./images/react.svg);
+    width: 18%;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .skills-images #express {
+    background-image: url(./images/node-express.png); }
+  .skills-images #mongo {
+    background-image: url(./images/mongo.png); }
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  position: relative; }
 
 .left-side {
   width: 20%;
@@ -159,5 +217,30 @@ header, .blog, .contact, footer, .portfolio, .skills {
     text-transform: uppercase;
     font-size: 28px;
     font-weight: 600; }
-  header h1, header h2, header h3, header p, header li, .blog h1, .blog h2, .blog h3, .blog p, .blog li, .contact h1, .contact h2, .contact h3, .contact p, .contact li, footer h1, footer h2, footer h3, footer p, footer li, .portfolio h1, .portfolio h2, .portfolio h3, .portfolio p, .portfolio li, .skills h1, .skills h2, .skills h3, .skills p, .skills li {
-    padding-left: 70px; }
+
+section {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.scroll-arrow {
+  background-color: white;
+  background-image: url(./images/scroll-down.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 3; }

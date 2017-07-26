@@ -1,7 +1,20 @@
 
 var navLink = document.querySelector('.page-links');
 var section = document.querySelector('section');
+var scrollButton = document.querySelector('.scroll-arrow');
 
+
+scrollButton.addEventListener('click', function(evt){
+  //TODO: add scroll event when clicked. scroll 100% of viewport height to reveal next section. Also highlight nav with appropriate section. Once bottom of page has been reaced reverse arrow and click causes page to scroll back to top.
+});
+
+let url = `file:///Users/nikki_everett/Dev/portfolio/index.html`;
+function onHashChange(hash){
+
+  console.log(hash);
+}
+
+//adds indicator to current nav bar section selection.
 navLink.addEventListener('click', function(evt){
   let previous = document.querySelector('.clicked');
   if(previous !== null){
@@ -38,11 +51,9 @@ var scene = new ScrollMagic.Scene({
 
 //778
 
-// function onHashChange(hash){
-//   console.log(hash);
-// }
+//
 
-// let url = `file:///Users/nikki_everett/Dev/portfolio/index.html`;
+//
 // navLink.addEventListener('scroll', function(evt){
 //   let previous = document.querySelector('.clicked');
 //   if(previous !== null){

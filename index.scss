@@ -9,7 +9,7 @@ body {
   padding: 0;
   font-family: $main-font;
   font-weight: 300;
-
+  position: relative;
 }
 .left-side {
   width: 20%;
@@ -21,7 +21,6 @@ body {
   right: 0;
   top: 0;
 }
-
 header, .blog, .contact, footer, .portfolio, .skills {
   padding: 130px 0;
   max-height: 100vh;
@@ -31,8 +30,31 @@ header, .blog, .contact, footer, .portfolio, .skills {
     font-size: 28px;
     font-weight: 600;
   }
-  h1, h2, h3, p, li {
-    padding-left: 70px;
-  }
-
+}
+section {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.scroll-arrow{
+  background-color: white;
+  background-image: url(./images/scroll-down.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 3;
 }
