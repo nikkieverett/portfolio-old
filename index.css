@@ -131,9 +131,9 @@ header {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 0 50px;
-  position: absolute; }
+  padding: 0 50px; }
   .about-me h2 {
+    text-align: left;
     text-transform: uppercase;
     font-size: 28px;
     font-weight: 600; }
@@ -155,42 +155,38 @@ header {
   .about-me h2, .about-me .button, .about-me p {
     margin: 20px; }
   .about-me p {
-    line-height: 1.7em; }
+    line-height: 1.7em;
+    text-align: left; }
 
-.skills-images {
+.container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+  outline: red 2px solid; }
+  .container h3 {
+    margin: 20px; }
+
+.front-end, .back-end, .tools {
+  text-align: center;
   margin: 30px auto;
-  position: absolute; }
-  .skills-images #html, .skills-images #css, .skills-images #js, .skills-images #react, .skills-images #express, .skills-images #mongo {
-    width: 18%;
-    height: 150px;
-    background-size: cover;
-    margin: 1%;
-    background-position: center;
-    position: relative; }
-  .skills-images #html {
-    background-image: url(./images/html.png);
-    background-position: center;
-    width: 16%; }
-  .skills-images #css {
-    background-image: url(./images/html-css.svg);
-    background-size: 95%;
-    width: 12%; }
-  .skills-images #js {
-    background-image: url(./images/js.png);
-    background-size: contain;
-    background-repeat: no-repeat; }
-  .skills-images #react {
-    background-image: url(./images/react.svg);
-    width: 18%;
-    background-size: contain;
-    background-repeat: no-repeat; }
-  .skills-images #express {
-    background-image: url(./images/node-express.png); }
-  .skills-images #mongo {
-    background-image: url(./images/mongo.png); }
+  width: 31%;
+  outline: red 2px solid; }
+
+.skill {
+  width: 100%;
+  height: 50px;
+  border-radius: 100px;
+  background-image: url(./images/bg-color.png);
+  background-size: cover;
+  margin: 1%;
+  background-position: center;
+  position: relative;
+  text-align: left;
+  line-height: 30px;
+  padding-left: 20px;
+  color: white;
+  overflow: visible; }
 
 body {
   margin: 0;
@@ -217,6 +213,10 @@ header, .blog, .contact, footer, .portfolio, .skills {
     text-transform: uppercase;
     font-size: 28px;
     font-weight: 600; }
+
+span {
+  color: #a23272;
+  font-weight: bold; }
 
 section {
   height: 100vh;
