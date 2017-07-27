@@ -1,0 +1,259 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+nav {
+  padding: 40px; }
+  nav a {
+    text-decoration: none;
+    color: #393939; }
+  nav .page-links {
+    margin-top: 40px; }
+    nav .page-links li {
+      padding: 20px;
+      position: relative;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold; }
+      nav .page-links li a::before {
+        content: "";
+        position: absolute;
+        left: -3px;
+        top: 10px;
+        background-color: 2px solid rgba(171, 46, 120, 0.7);
+        width: 6px;
+        transition-duration: .2s;
+        -webkit-transition-duration: .2s; }
+      nav .page-links li a:hover::before, nav .page-links li .clicked::before {
+        width: 130px;
+        height: 30px;
+        background-color: rgba(171, 46, 120, 0.7);
+        color: white; }
+
+header {
+  width: 100%;
+  background-image: url("./images/Sarah-Marino-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  color: white;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.26px; }
+  header .overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2; }
+  header .header-text {
+    z-index: 3;
+    position: absolute; }
+    header .header-text h1 {
+      font-size: 50px;
+      font-weight: 600;
+      padding-left: 70px; }
+    header .header-text h2 {
+      font-size: 35px;
+      font-weight: 300;
+      padding-left: 70px; }
+    header .header-text h3 {
+      background-color: black;
+      display: inline-block;
+      padding: 10px;
+      font-size: 13px;
+      margin: 20px 70px;
+      letter-spacing: 10px; }
+
+.links {
+  position: fixed;
+  bottom: 50px;
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase; }
+  .links ul {
+    display: flex;
+    justify-content: center; }
+  .links li {
+    margin-right: 50px; }
+  .links a {
+    color: #ececec;
+    text-decoration: none;
+    letter-spacing: 5px;
+    transition: .5s; }
+  .links a:hover {
+    font-size: 1.1em; }
+
+.about-me {
+  max-height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 50px; }
+  .about-me h2 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600; }
+  .about-me article {
+    width: 70%; }
+  .about-me .logo {
+    background-image: url("./images/me.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 28%;
+    border-radius: 200px;
+    margin: 0 auto; }
+  .about-me .button {
+    padding: 10px;
+    border: black 2px solid;
+    display: inline-block; }
+  .about-me h2, .about-me .button, .about-me p {
+    margin: 20px; }
+  .about-me p {
+    line-height: 1.7em;
+    text-align: left; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-right: 100px;
+  width: 100%;
+  padding: 20px; }
+  .container h2 {
+    display: block;
+    margin-right: 80px; }
+  .container h3 {
+    margin: 20px; }
+
+.front-end, .back-end, .tools {
+  text-align: center;
+  margin: 30px;
+  width: 31%; }
+
+.skill {
+  width: 100%;
+  height: 30px;
+  border-radius: 100px;
+  background-image: url(./images/bg-color.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 3%;
+  background-position: center;
+  position: relative;
+  text-align: left;
+  line-height: 35px;
+  padding-left: 20px;
+  color: white;
+  letter-spacing: 3px;
+  overflow: visible;
+  box-shadow: inset 1px 2px #cdcdcd; }
+
+#js, #react, #express, #github {
+  background-position-x: -100px; }
+
+#mongo, #terminal, #heroku, #firebase {
+  background-position-x: -150px; }
+
+#node {
+  background-position-x: -200px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  position: relative; }
+
+.left-side {
+  width: 20%;
+  position: fixed; }
+
+.right-side {
+  width: 80%;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+header, .blog, .contact, footer, .portfolio, .skills {
+  padding: 130px 0;
+  max-height: 100vh;
+  min-height: 100vh; }
+  header h2, .blog h2, .contact h2, footer h2, .portfolio h2, .skills h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600; }
+
+span {
+  color: #a23272;
+  font-weight: bold; }
+
+section {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.scroll-arrow {
+  background-color: white;
+  background-image: url(./images/scroll-down.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 3; }

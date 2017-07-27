@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "personal portfolio site",
-  "main": "./js/index.js",
+  "main": "/src/js/index.js",
   "dependencies": {
     "express": "^4.15.3",
     "scrollmagic": "^2.0.5"
@@ -10,6 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass src/index.scss index.css",
     "start": "node server.js"
   },
   "repository": {
