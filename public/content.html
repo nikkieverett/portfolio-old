@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Nikki Everett - About</title>
     <link rel="stylesheet" href="index.css" />
-
   </head>
   <body>
     <div class="scroll-arrow"></div>
@@ -15,7 +14,7 @@
           <li><a href="#about-me">about me</a></li>
           <li><a href="#skills">skills</a></li>
           <li><a href="#portfolio">portfolio</a></li>
-          <li><a href="#blog">blog</a></li>
+          <!-- <li><a href="#blog">blog</a></li> -->
           <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
@@ -31,7 +30,7 @@
             <br />
             I am most motivated by my need for creativity. I want to make things that are not only beautiful but also useful. Wether that's through photography, carpentry, sculpture, gardening, or web development, I find my drive when there's a problem that needs to be solved.
           </p>
-          <div class="button">download resume</div>
+          <!-- <div class="button">download resume</div> -->
         </article>
       </section>
       <section class="skills" id="skills">
@@ -64,15 +63,31 @@
         </div>
       </section>
       <section class="portfolio" id="portfolio">
-        <h2><span>-</span> portfolio <span>-</span></h2>
-        <div>put works here</div>
+        <h2><span>-</span> recent projects <span>-</span></h2>
+        <div class="flex-container">
+          <div id="project1">
+            <a href="https://not-yo-mamas-recipes.herokuapp.com/"><div id="image1"></div></a>
+            <h2 class="folio-links">Not Yo Mama's Recipes</h2>
+            <span>HTML / SCSS / React / React Router / Redux / Express / MongoDB / Heroku</span>
+          </div>
+          <div id="project3">
+            <a href="https://nikkieverett.github.io/ibeer/"><div id="image3"></div></a>
+            <h2 class="folio-links">Blogging Template</h2>
+           <span>HTML / SCSS / JavaScript / Github</span>.
+          </div>
+          <div id="project2">
+            <a href="https://nikkieverett.github.io/jesseshowalter/"><div id="image2"></div></a>
+            <h2 class="folio-links">  Portfolio Template</h2>
+            <span>HTML / SCSS / JavaScript / Github</span>
+          </div>
+        </div>
       </section>
-      <section class="blog" id="blog">
+      <!-- <section class="blog" id="blog">
         <h2>
           <span>-</span> blog <span>-</span>
         </h2>
         <div>blog links go here</div>
-      </section>
+      </section> -->
       <section class="contact" id="contact">
         <h2><span>-</span> contact <span>-</span></h2>
         <h3>general inquiries: nikki.everett@outlook.com</h3>
@@ -89,6 +104,6 @@
         <div class="copyright"></div>
       </footer>
     </div>
-    <script src="./js/index.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

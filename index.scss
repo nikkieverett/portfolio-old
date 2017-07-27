@@ -3,6 +3,8 @@
 @import './scss/header';
 @import './scss/aboutMe';
 @import './scss/skills';
+@import './scss/portfolio';
+@import './scss/contact';
 
 body {
   margin: 0;
@@ -22,7 +24,6 @@ body {
   top: 0;
 }
 header, .blog, .contact, footer, .portfolio, .skills {
-  padding: 130px 0;
   max-height: 100vh;
   min-height: 100vh;
   h2 {
@@ -47,18 +48,4 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-.scroll-arrow{
-  background-color: white;
-  background-image: url(./images/scroll-down.png);
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 100px;
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  z-index: 3;
 }
