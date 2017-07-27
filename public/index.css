@@ -206,18 +206,6 @@ header {
   margin-right: 50px; }
   .portfolio h2 {
     margin-bottom: 30px; }
-  .portfolio .folio-links {
-    text-transform: lowercase;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    margin-bottom: 0;
-    padding: 20px; }
-  .portfolio .built-with {
-    padding: 20px;
-    text-transform: uppercase;
-    color: rgba(171, 46, 120, 0.7); }
-  .portfolio p {
-    text-align: left; }
 
 .flex-container {
   display: flex;
@@ -232,7 +220,8 @@ header {
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  transition: 2s; }
 
 #image1 {
   background-image: url("./images/project1.png");
@@ -245,10 +234,43 @@ header {
 #image3 {
   background-image: url("./images/project3.png"); }
 
-.view-code {
-  border: 1px solid black;
-  padding: 10px 50px;
-  margin-bottom: 10px; }
+#image1:hover, #image2:hover, #image3:hover {
+  width: 98%;
+  height: 290px; }
+
+h2 {
+  margin: 30px; }
+
+#flex-container {
+  display: flex; }
+
+.social {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 100px;
+  background-image: url("./images/social-icons-sketch.png");
+  background-color: red; }
+
+#fb {
+  background-position-x: -40px;
+  background-position-y: -30px; }
+
+#twitter {
+  background-position-x: -130px;
+  background-position-y: -30px; }
+
+#insta {
+  background-position-x: -305px;
+  background-position-y: -30px; }
+
+#in {
+  background-position-x: -570px;
+  background-position-y: -30px; }
+
+#git {
+  background-position-x: -40px;
+  background-position-y: -380px; }
 
 body {
   margin: 0;
