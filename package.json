@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "personal portfolio site",
-  "main": "index.js",
+  "main": "./js/index.js",
   "dependencies": {
     "scrollmagic": "^2.0.5"
   },
