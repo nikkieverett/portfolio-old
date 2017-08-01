@@ -159,8 +159,6 @@ header {
     text-align: left; }
 
 .container {
-  display: flex;
-  flex-direction: row;
   margin-right: 100px;
   width: 100%;
   padding: 20px; }
@@ -191,7 +189,8 @@ header {
   color: white;
   letter-spacing: 3px;
   overflow: visible;
-  box-shadow: inset 1px 2px #cdcdcd; }
+  box-shadow: inset 1px 1px 1px 1px #f6f6f6;
+  display: inline-block; }
 
 #js, #react, #express, #github {
   background-position-x: -100px; }
@@ -201,6 +200,9 @@ header {
 
 #node {
   background-position-x: -200px; }
+
+h4 {
+  display: inline-block; }
 
 .portfolio {
   margin-right: 50px; }
@@ -249,8 +251,7 @@ h2 {
   height: 100px;
   margin: 20px;
   border-radius: 100px;
-  background-image: url("./images/social-icons-sketch.png");
-  background-color: red; }
+  background-image: url("./images/social-icons-sketch.png"); }
 
 #fb {
   background-position-x: -40px;
