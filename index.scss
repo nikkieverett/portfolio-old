@@ -9,41 +9,57 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: $main-font;
+  font-family: $serif-font;
   font-weight: 300;
   position: relative;
 }
-.left-side {
-  width: 20%;
-  position: fixed;
+.page-container {
+  height: 100vh;
+
 }
-.right-side {
-  width: 80%;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-header, .blog, .contact, footer, .portfolio, .skills {
-  max-height: 100vh;
-  min-height: 100vh;
+#about-me{
   h2 {
+    color: rgba(23, 39, 47, 1.0);
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    text-align: left;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 70px;
     font-weight: 600;
+    margin: 0;
+    font-family: $serif-font;
+  }
+  h3 {
+    font-family: $sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  p {
+    font-family: $sans-serif;
+    letter-spacing: 1.2px;
+
   }
 }
-span{
-  color: rgba(162, 50, 114, 1.0);
-  font-weight: bold;
-}
+
+// header, .blog, .contact, footer, .portfolio, .skills {
+//   h2 {
+//     text-transform: uppercase;
+//     font-size: 28px;
+//     font-weight: 600;
+//   }
+// }
+// span{
+//   color: rgba(162, 50, 114, 1.0);
+//   font-weight: bold;
+// }
 section {
-  height: 100vh;
   box-sizing: border-box;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  // text-align: center;
+  // flex-direction: column;
   padding: 2vw;
   background-size: cover;
   background-repeat: no-repeat;

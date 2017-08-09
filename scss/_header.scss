@@ -1,6 +1,7 @@
-header {
+#header {
+  height: 100vh;
   width: 100%;
-  background-image: url('./images/Sarah-Marino-1.jpg');
+  background-image: url('./images/leaves.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -9,13 +10,14 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.26px;
   padding: 130px 0;
+  // background-color: rgba(78, 133, 148, 1.0);
 
   .overlay {
     position: absolute;
     width: 100%;
     top: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, .5);
     z-index: 2;
   }
   .header-text {
@@ -29,7 +31,9 @@ header {
     h2 {
       font-size: 35px;
       font-weight: 300;
-      padding-left: 70px;
+      padding-left: 40px;
+      font-family: $sans-serif;
+
     }
     h3 {
       background-color: black;
@@ -38,12 +42,13 @@ header {
       font-size: 13px;
       margin: 20px 70px;
       letter-spacing: 10px;
+      font-family: $sans-serif;
     }
   }
 }
 .links {
-  position: fixed;
-  bottom:50px;
+  position: absolute;
+  bottom: 50px;
   z-index: 3;
   width: 100%;
   text-align: center;

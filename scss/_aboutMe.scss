@@ -1,37 +1,90 @@
-.about-me{
-  max-height: 100vh;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 0 50px;
+@import 'variables';
+
+#about-me{
+  height: 100vh;
+  position: relative;
+
+  .half{
+    position: relative;
+    float: left;
+    height: 100vh;
+  }
+  .left {
+    width: 40%;
+  }
+  .right{
+    width: 60%;
+  }
   h2 {
+    color: rgba(23, 39, 47, 1.0);
+    position: absolute;
+    left: 0px;
+    top: 100px;
     text-align: left;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 70px;
     font-weight: 600;
+    margin: 0;
+    font-family: $serif-font;
+  }
+  h3 {
+    font-family: $sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  p {
+    font-family: $sans-serif;
+    letter-spacing: 1.2px;
+
   }
   article{
     width: 70%;
   }
-  .logo {
-    background-image: url('./images/me.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    width: 28%;
-    border-radius: 200px;
-    margin: 0 auto;
-  }
-  .button {
-    padding: 10px;
-    border: black 2px solid;
+  .large-left-image-column {
+    width: 350px;
+    height: 90vh;
     display: inline-block;
+    position: absolute;
+    left: 100px;
+    bottom: 0px;
+    background-image: url('./images/cactus.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  h2, .button, p {
-    margin: 20px;
-  }
-  p{
-    line-height: 1.7em;
+  .text-column-right {
+    line-height: 1.7;
     text-align: left;
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    width: 50%;
+  }
+  .colored-box {
+    height: 30px;
+    background-color: rgba(78, 93, 61, 1.0);
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 200px;
+
+  }
+  .small {
+    top: 150px;
+  }
+  .large {
+    top: 220px;
+    right: 100px;
+    width: 250px;
+  }
+  .bottom {
+    top: 270px;
+  }
+  .square {
+    height: 250px;
+    left: 70px;
+    top: 50px;
+    background-color: white;
+    border-top: 5px solid rgba(78, 93, 61, 1.0);
+    border-left: 5px solid rgba(78, 93, 61, 1.0);
   }
 }

@@ -72,7 +72,7 @@ nav {
 #header {
   height: 100vh;
   width: 100%;
-  background-image: url("./images/Sarah-Marino-1.jpg");
+  background-image: url("./images/leaves.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -86,6 +86,7 @@ nav {
     width: 100%;
     top: 0;
     bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2; }
   #header .header-text {
     z-index: 3;
@@ -97,14 +98,16 @@ nav {
     #header .header-text h2 {
       font-size: 35px;
       font-weight: 300;
-      padding-left: 70px; }
+      padding-left: 40px;
+      font-family: "Quicksand", sans-serif; }
     #header .header-text h3 {
       background-color: black;
       display: inline-block;
       padding: 10px;
       font-size: 13px;
       margin: 20px 70px;
-      letter-spacing: 10px; }
+      letter-spacing: 10px;
+      font-family: "Quicksand", sans-serif; }
 
 .links {
   position: absolute;
@@ -154,7 +157,8 @@ nav {
     font-size: 18px;
     font-weight: bold; }
   #about-me p {
-    font-family: "Quicksand", sans-serif; }
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 1.2px; }
   #about-me article {
     width: 70%; }
   #about-me .large-left-image-column {
@@ -184,15 +188,18 @@ nav {
   #about-me .small {
     top: 150px; }
   #about-me .large {
-    top: 250px;
+    top: 220px;
     right: 100px;
     width: 250px; }
   #about-me .bottom {
-    top: 350px; }
+    top: 270px; }
   #about-me .square {
     height: 250px;
-    left: 50px;
-    top: 40; }
+    left: 70px;
+    top: 50px;
+    background-color: white;
+    border-top: 5px solid #4e5d3d;
+    border-left: 5px solid #4e5d3d; }
 
 .container {
   display: flex;
@@ -321,17 +328,33 @@ h2 {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Prata", serif;
   font-weight: 300;
   position: relative; }
 
 .page-container {
   height: 100vh; }
 
-header h2, .blog h2, .contact h2, footer h2, .portfolio h2, .skills h2 {
+#about-me h2 {
+  color: #17272f;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  text-align: left;
   text-transform: uppercase;
-  font-size: 28px;
-  font-weight: 600; }
+  font-size: 70px;
+  font-weight: 600;
+  margin: 0;
+  font-family: "Prata", serif; }
+
+#about-me h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: bold; }
+
+#about-me p {
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 1.2px; }
 
 section {
   box-sizing: border-box;
