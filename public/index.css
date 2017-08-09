@@ -69,7 +69,8 @@ nav {
         background-color: rgba(171, 46, 120, 0.7);
         color: white; }
 
-header {
+#header {
+  height: 100vh;
   width: 100%;
   background-image: url("./images/Sarah-Marino-1.jpg");
   background-size: cover;
@@ -80,25 +81,24 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.26px;
   padding: 130px 0; }
-  header .overlay {
+  #header .overlay {
     position: absolute;
     width: 100%;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2; }
-  header .header-text {
+  #header .header-text {
     z-index: 3;
     position: absolute; }
-    header .header-text h1 {
+    #header .header-text h1 {
       font-size: 50px;
       font-weight: 600;
       padding-left: 70px; }
-    header .header-text h2 {
+    #header .header-text h2 {
       font-size: 35px;
       font-weight: 300;
       padding-left: 70px; }
-    header .header-text h3 {
+    #header .header-text h3 {
       background-color: black;
       display: inline-block;
       padding: 10px;
@@ -107,7 +107,7 @@ header {
       letter-spacing: 10px; }
 
 .links {
-  position: fixed;
+  position: absolute;
   bottom: 50px;
   z-index: 3;
   width: 100%;
@@ -127,36 +127,72 @@ header {
   .links a:hover {
     font-size: 1.1em; }
 
-.about-me {
-  max-height: 100vh;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 0 50px; }
-  .about-me h2 {
+#about-me {
+  height: 100vh;
+  position: relative; }
+  #about-me .half {
+    position: relative;
+    float: left;
+    height: 100vh; }
+  #about-me .left {
+    width: 40%; }
+  #about-me .right {
+    width: 60%; }
+  #about-me h2 {
+    color: #17272f;
+    position: absolute;
+    left: 0px;
+    top: 100px;
     text-align: left;
     text-transform: uppercase;
-    font-size: 28px;
-    font-weight: 600; }
-  .about-me article {
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0;
+    font-family: "Prata", serif; }
+  #about-me h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    font-weight: bold; }
+  #about-me p {
+    font-family: "Quicksand", sans-serif; }
+  #about-me article {
     width: 70%; }
-  .about-me .logo {
-    background-image: url("./images/me.jpeg");
-    background-size: cover;
+  #about-me .large-left-image-column {
+    width: 350px;
+    height: 90vh;
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    bottom: 0px;
+    background-image: url("./images/cactus.png");
     background-repeat: no-repeat;
+    background-size: cover; }
+  #about-me .text-column-right {
+    line-height: 1.7;
+    text-align: left;
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    width: 50%; }
+  #about-me .colored-box {
+    height: 30px;
+    background-color: #4e5d3d;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 200px; }
+  #about-me .small {
+    top: 150px; }
+  #about-me .large {
+    top: 250px;
+    right: 100px;
+    width: 250px; }
+  #about-me .bottom {
+    top: 350px; }
+  #about-me .square {
     height: 250px;
-    width: 28%;
-    border-radius: 200px;
-    margin: 0 auto; }
-  .about-me .button {
-    padding: 10px;
-    border: black 2px solid;
-    display: inline-block; }
-  .about-me h2, .about-me .button, .about-me p {
-    margin: 20px; }
-  .about-me p {
-    line-height: 1.7em;
-    text-align: left; }
+    left: 50px;
+    top: 40; }
 
 .container {
   display: flex;
@@ -289,36 +325,17 @@ body {
   font-weight: 300;
   position: relative; }
 
-.left-side {
-  width: 20%;
-  position: fixed; }
+.page-container {
+  height: 100vh; }
 
-.right-side {
-  width: 80%;
-  position: absolute;
-  right: 0;
-  top: 0; }
-
-header, .blog, .contact, footer, .portfolio, .skills {
-  max-height: 100vh;
-  min-height: 100vh; }
-  header h2, .blog h2, .contact h2, footer h2, .portfolio h2, .skills h2 {
-    text-transform: uppercase;
-    font-size: 28px;
-    font-weight: 600; }
-
-span {
-  color: #a23272;
-  font-weight: bold; }
+header h2, .blog h2, .contact h2, footer h2, .portfolio h2, .skills h2 {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600; }
 
 section {
-  height: 100vh;
   box-sizing: border-box;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
   padding: 2vw;
   background-size: cover;
   background-repeat: no-repeat;
