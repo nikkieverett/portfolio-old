@@ -72,25 +72,26 @@ nav {
 #header {
   height: 100vh;
   width: 100%;
-  background-image: url("./images/leaves.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  color: white;
-  z-index: 1;
-  text-transform: uppercase;
-  letter-spacing: 0.26px;
-  padding: 130px 0; }
+  color: #424f27; }
+  #header #header-image {
+    background-image: url("./images/plantsss.jpg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -100px;
+    position: relative;
+    width: 900px;
+    height: 400px;
+    margin: 0 auto; }
   #header .overlay {
     position: absolute;
-    width: 100%;
+    width: 700px;
+    height: 400px;
     top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
     z-index: 2; }
   #header .header-text {
-    z-index: 3;
-    position: absolute; }
+    text-align: center; }
     #header .header-text h1 {
       font-size: 50px;
       font-weight: 600;
@@ -107,7 +108,8 @@ nav {
       font-size: 13px;
       margin: 20px 70px;
       letter-spacing: 10px;
-      font-family: "Quicksand", sans-serif; }
+      font-family: "Quicksand", sans-serif;
+      color: white; }
 
 .links {
   position: absolute;
@@ -249,9 +251,17 @@ nav {
 h4 {
   display: inline-block; }
 
-.portfolio {
-  margin-right: 50px; }
-  .portfolio h2 {
+#portfolio {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  color: white;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.26px;
+  padding: 130px 0;
+  background-color: #4e8594; }
+  #portfolio h2 {
     margin-bottom: 30px; }
 
 .flex-container {
@@ -335,7 +345,7 @@ body {
 .page-container {
   height: 100vh; }
 
-#about-me h2 {
+#about-me h2, #portfolio h2 {
   color: #17272f;
   position: absolute;
   left: 0px;
@@ -347,12 +357,12 @@ body {
   margin: 0;
   font-family: "Prata", serif; }
 
-#about-me h3 {
+#about-me h3, #portfolio h3 {
   font-family: "Quicksand", sans-serif;
   font-size: 18px;
   font-weight: bold; }
 
-#about-me p {
+#about-me p, #portfolio p {
   font-family: "Quicksand", sans-serif;
   letter-spacing: 1.2px; }
 
