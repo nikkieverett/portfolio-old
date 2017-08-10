@@ -17,14 +17,13 @@ body {
   height: 100vh;
 
 }
-#about-me{
+#about-me, #portfolio{
   h2 {
     color: rgba(23, 39, 47, 1.0);
     position: absolute;
     left: 0px;
     top: 100px;
     text-align: left;
-    text-transform: uppercase;
     font-size: 70px;
     font-weight: 600;
     margin: 0;
@@ -42,26 +41,15 @@ body {
   }
 }
 
-// header, .blog, .contact, footer, .portfolio, .skills {
-//   h2 {
-//     text-transform: uppercase;
-//     font-size: 28px;
-//     font-weight: 600;
-//   }
-// }
-// span{
-//   color: rgba(162, 50, 114, 1.0);
-//   font-weight: bold;
-// }
 section {
   box-sizing: border-box;
   display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // text-align: center;
-  // flex-direction: column;
   padding: 2vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+.fixed{
+  position: fixed;
+  top: 0;
 }

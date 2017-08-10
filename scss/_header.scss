@@ -1,28 +1,54 @@
+//add scroll
+
 #header {
   height: 100vh;
   width: 100%;
-  background-image: url('./images/leaves.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  color: white;
-  z-index: 1;
-  text-transform: uppercase;
-  letter-spacing: 0.26px;
-  padding: 130px 0;
-  // background-color: rgba(78, 133, 148, 1.0);
+  color: rgba(66, 79, 39, 1.0);
+  position: relative;
+  padding-bottom: 100px;
 
+  #header-image{
+    background-image: url('./images/plantsss.jpg');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -250px;
+    position: relative;
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
+
+  }
   .overlay {
     position: absolute;
-    width: 100%;
+    width: 900px;
+    height: 400px;
     top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
+    left: 0;
+    // background-color: rgba(0, 0, 0, .3);
     z-index: 2;
   }
-  .header-text {
-    z-index: 3;
+  .colored-box{
+    width: 200px;
+    height: 200px;
     position: absolute;
+    bottom: -40px;
+    z-index: -5;
+    border-bottom: 10px solid rgba(66, 79, 39, 1.0);
+
+
+  }
+  .left{
+    left: -40px;
+    border-left: 10px solid rgba(66, 79, 39, 1.0);
+  }
+  .right{
+    right: -40px;
+    border-right: 10px solid rgba(66, 79, 39, 1.0);
+  }
+  .header-text {
+    text-align: center;
+
     h1 {
       font-size: 50px;
       font-weight: 600;
@@ -43,17 +69,23 @@
       margin: 20px 70px;
       letter-spacing: 10px;
       font-family: $sans-serif;
+      color: white;
     }
   }
 }
 .links {
+  display: flex;
+  justify-content: center;
   position: absolute;
-  bottom: 50px;
+  bottom: -250px;
+  margin: 0 auto;
   z-index: 3;
   width: 100%;
   text-align: center;
   font-size: 1.5em;
+  font-family: $sans-serif;
   text-transform: uppercase;
+  color: black;
   ul {
     display: flex;
     justify-content: center;
@@ -70,4 +102,12 @@
   a:hover{
     font-size: 1.1em;
   }
+}
+.revealOnScroll {
+  opacity: 0;
+}
+#page-break-first{
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(rgba(66, 79, 39, 1.0),rgba(28, 51, 53, 1.0))
 }

@@ -5,6 +5,8 @@
     <title>nikki everett</title>
     <link rel="stylesheet" href="index.css" />
     <link href="https://fonts.googleapis.com/css?family=Prata|Quicksand:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="animate.min.css"> -->
   </head>
   <body>
     <div class="page-container" id="header">
@@ -18,9 +20,12 @@
         <h1>nikki everett</h1>
         <h3>ui/ux designer && front end developer</h3>
       </div>
-      
+      <ul class="links">
+        <li class="revealOnScroll" data-animation="fadeInDown"><a href="#about-me">about me</a></li>
+        <li class="revealOnScroll" data-animation="fadeInDown"><a href="#portfolio">portfolio</a></li>
+        <li class="revealOnScroll" data-animation="fadeInDown"><a href="#contact">contact</a></li>
+      </ul>
     </div>
-    <div class="page-break first"> </div>
     <div class="page-container" id="about-me">
       <div class="half left">
         <div class="colored-box square"></div>
@@ -51,21 +56,17 @@
       <section class="portfolio">
         <h2>recent projects</h2>
         <div class="flex-container">
-          <div id="project1">
-            <a href="https://not-yo-mamas-recipes.herokuapp.com/"><div id="image1"></div></a>
-          </div>
-          <div id="project3">
-            <a href="https://nikkieverett.github.io/ibeer/"><div id="image3"></div></a>
-          </div>
-          <div id="project2">
-            <a href="https://nikkieverett.github.io/jesseshowalter/"><div id="image2"></div></a>
-          </div>
+          <a href="https://not-yo-mamas-recipes.herokuapp.com/" id="image1"></a>
+          <a href="https://classmaxapp.com/" id="image2"></a>
+          <a href="https://play.google.com/store/apps/details?id=com.thehaps&hl=en" id="image3"></a>
         </div>
       </section>
     </div>
 
-    <script src="path/to/js/gsap/TweenMax.min.js"></script>
-    <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
-    <script src="./js/index.js"></script>
+    <!-- <script src="path/to/js/gsap/TweenMax.min.js"></script> -->
+    <!-- <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="../js/index.js"></script>
   </body>
 </html>

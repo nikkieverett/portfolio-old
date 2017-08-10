@@ -4,6 +4,7 @@
   "description": "personal portfolio site",
   "main": "/src/js/index.js",
   "dependencies": {
+    "animate.css": "^3.5.2",
     "express": "^4.15.3",
     "scrollmagic": "^2.0.5"
   },
