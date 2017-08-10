@@ -1,6 +1,6 @@
 const path = require('path');
 const express = require('express');
-const medium = require('medium-sdk')
+// const medium = require('medium-sdk')
 
 const app = express();
 
