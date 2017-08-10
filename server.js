@@ -15,9 +15,10 @@ const client = new medium.MediumClient({
 
 const redirectURL = 'https://easypresso.herokuapp.com/callback/medium';
 
-var url = client.getAuthorizationUrl('secretState', redirectURL, [
+const url = client.getAuthorizationUrl('secretState', redirectURL, [
   medium.Scope.BASIC_PROFILE, medium.Scope.PUBLISH_POST
 ]);
+console.log(url);
 
 // (Send the user to the authorization URL to obtain an authorization code.)
 
