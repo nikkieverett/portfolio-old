@@ -34,12 +34,14 @@
     font-family: $sans-serif;
     font-size: 18px;
     font-weight: bold;
+    bottom: 80px;
+
   }
   p {
     font-family: $sans-serif;
     letter-spacing: 1.2px;
     position: absolute;
-    bottom: 50px;
+    bottom: 70px;
 
   }
   // article{
@@ -60,7 +62,7 @@
     text-align: left;
     position: absolute;
     left: 0;
-    bottom: 100px;
+    bottom: 140px;
     width: 70%;
   }
   .colored-box {
