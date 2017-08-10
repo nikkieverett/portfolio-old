@@ -1,51 +1,38 @@
-var navbar = document.querySelector('#page-break-first');
-var section = document.querySelector('section');
-var scrollButton = document.querySelector('.scroll-arrow');
+var page = document.querySelector('#page');
+var sections = document.getElementsByTagName('section');
+// This transition can be defined in the CSS if preferred.
+var transition = 'top .8s cubic-bezier(0.77, 0, 0.175, 1)';
+page.style.transition = transition;
+page.onclick = slideDown;
 
-$(function() {
-  var $window = $(window),
-    win_height_padded = $window.height() * 1.1;
+function slideDown(e) {
 
-  $window.on("scroll", revealOnScroll);
-
-  function revealOnScroll() {
-    var scrolled = $window.scrollTop(),
-      win_height_padded = $window.height() * 1.1;
-
-    // Showed...
-    $(".revealOnScroll:not(.animated)").each(function() {
-      var $this = $(this),
-        offsetTop = $this.offset().top;
-
-      if (scrolled + win_height_padded > offsetTop) {
-        if ($this.data("timeout")) {
-          window.setTimeout(function() {
-            $this.addClass("animated " + $this.data("animation"));
-          }, parseInt($this.data("timeout"), 10));
-        } else {
-          $this.addClass("animated " + $this.data("animation"));
-        }
-      }
-    });
-    // Hidden...
-    $(".revealOnScroll.animated").each(function(index) {
-      var $this = $(this),
-        offsetTop = $this.offset().top;
-      if (scrolled + win_height_padded < offsetTop) {
-        $(this).removeClass("animated fadeInUp flipInX lightSpeedIn");
-      }
-    });
+  // Delegate.
+  if (e.target.className != 'next') {
+    return;
   }
-  revealOnScroll();
-});
 
-window.addEventListener('scroll', function(){
-  let scrollYPos= document.body.scrollTop;
-  if(scrollYPos >= 686){
-    navbar.classList.add('fixed');
-  }
-  console.log(document.body.scrollTop);
-});
+  // Prevent firing simultaneously.
+  page.onclick = '';
+  self = e.target.parentNode;
+  var offset = self.getBoundingClientRect();
+  var scroll = self.offsetTop;
+
+  // CSS Transition slide.
+  page.style.top = (-offset.height-offset.top) + 'px';
+
+  setTimeout(function () {
+    // Reposition the real scrollbar.
+    page.style.transition = 'none';
+    page.style.top = '';
+    window.scrollTo(0, offset.height+scroll);
+    page.style.transition = transition;
+    // Reattach event.
+    page.onclick = slideDown;
+
+    // This timeout length should match the CSS animation time (.8s).
+  }, 800);
+}
 
 // scrollButton.addEventListener('click', function(evt){
 //   //TODO: add scroll event when clicked. scroll 100% of viewport height to reveal next section. Also highlight nav with appropriate section. Once bottom of page has been reaced reverse arrow and click causes page to scroll back to top.

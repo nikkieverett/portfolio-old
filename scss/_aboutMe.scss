@@ -2,27 +2,29 @@
 
 #about-me{
   height: 100vh;
-  position: relative;
-  padding-bottom: 100px;
+  color: rgba(28, 51, 53, 1.0);
+
 
   .half{
-    position: relative;
     float: left;
-    height: 100vh;
+    position: relative;
+    margin: 50px 0;
   }
   .left {
     width: 40%;
+    height: 100%;
   }
   .right{
     width: 60%;
+    height: 100%;
+
   }
   h2 {
-    color: rgba(23, 39, 47, 1.0);
+    color: rgba(28, 51, 53, 1.0);
     position: absolute;
-    left: 0px;
-    top: 100px;
+    left: 0;
+    top: 50px;
     text-align: left;
-    text-transform: uppercase;
     font-size: 70px;
     font-weight: 600;
     margin: 0;
@@ -37,19 +39,18 @@
     font-family: $sans-serif;
     letter-spacing: 1.2px;
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
 
   }
-  article{
-    width: 70%;
-  }
+  // article{
+  //   width: 70%;
+  // }
   .large-left-image-column {
-    width: 350px;
-    height: 90vh;
-    display: inline-block;
+    width: 80%;
+    height: 100vh;
     position: absolute;
-    left: 100px;
-    bottom: 0px;
+    left: 15%;
+    bottom: 0;
     background-image: url('./images/cactus.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,34 +59,39 @@
     line-height: 1.7;
     text-align: left;
     position: absolute;
-    left: 0px;
-    bottom: 30px;
-    width: 50%;
+    left: 0;
+    bottom: 100px;
+    width: 70%;
   }
   .colored-box {
-    height: 30px;
     background-color: rgba(28, 51, 53, 1.0);
     position: absolute;
     right: 0;
     top: 20px;
-    width: 200px;
 
   }
   .small {
-    top: 150px;
+    height: 4%;
+    top: 10%;
+    width: 20%;
+
   }
   .large {
-    top: 220px;
-    right: 100px;
-    width: 250px;
+    height: 4%;
+    top: 20%;
+    right: 10%;
+    width: 30%;
   }
   .bottom {
-    top: 290px;
+    height: 4%;
+    top: 30%;
+    width: 20%;
   }
   .square {
-    height: 250px;
-    left: 80px;
-    top: 50px;
+    height: 50%;
+    width: 40%;
+    left: 10%;
+    top: 6%;
     background-color: rgba(28, 51, 53, 1.0);
   }
 }

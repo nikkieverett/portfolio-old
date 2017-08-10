@@ -6,23 +6,10 @@
 @import './scss/portfolio';
 @import './scss/contact';
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: $serif-font;
-  font-weight: 300;
-  position: relative;
-}
-.page-container {
-  height: 100vh;
 
-}
 #about-me, #portfolio{
   h2 {
-    color: rgba(23, 39, 47, 1.0);
     position: absolute;
-    left: 0px;
-    top: 100px;
     text-align: left;
     font-size: 70px;
     font-weight: 600;
@@ -37,19 +24,38 @@ body {
   p {
     font-family: $sans-serif;
     letter-spacing: 1.2px;
-
   }
 }
-
-section {
-  box-sizing: border-box;
-  display: flex;
-  padding: 2vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+body {
+  margin:0;
+  padding: 0;
+  font-family: $serif-font;
+  font-weight: 300;
+  position: relative;
 }
-.fixed{
-  position: fixed;
-  top: 0;
+#page {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+}
+section {
+  height: 100vh;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-sizing: border-box;
+}
+
+.next {
+  position:absolute;
+  bottom:0;
+  left:50%;
+  margin-left:-36px;
+  cursor:pointer;
+  font-size:400%;
+}
+.next:after {
+  content:'▼';
 }
