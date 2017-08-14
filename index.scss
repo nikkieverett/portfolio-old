@@ -1,13 +1,12 @@
 @import './scss/reset';
-@import './scss/navbar';
 @import './scss/header';
 @import './scss/aboutMe';
-@import './scss/skills';
 @import './scss/portfolio';
+@import './scss/blog';
 @import './scss/contact';
 
 
-#about-me{
+#about-me, #blog, #contact{
   h2 {
     position: absolute;
     text-align: left;
@@ -26,12 +25,14 @@
     letter-spacing: 1.2px;
   }
 }
+
 body {
   margin:0;
   padding: 0;
   font-family: $serif-font;
   font-weight: 300;
   position: relative;
+  background-color: rgba(238, 238, 238, 1.0);
 }
 #page {
   position:absolute;
@@ -42,20 +43,48 @@ body {
 section {
   height: 100vh;
   position:relative;
-  // display:flex;
-  align-items:center;
-  justify-content:center;
-  box-sizing: border-box;
+  margin-bottom: 150px;
 }
 
 .next {
   position:absolute;
-  bottom:0;
-  left:50%;
-  margin-left:-36px;
+  bottom: 150px;
+  right:50px;
+  // margin-left:-36px;
   cursor:pointer;
-  font-size:400%;
+  font-size:300%;
+  border: 2px solid;
+  border-radius: 100px;
+  padding: 30px 20px 10px;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
 }
 .next:after {
   content:'▼';
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
 }

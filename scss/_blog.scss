@@ -1,0 +1,73 @@
+@import 'variables';
+
+#blog{
+  .blog-flex-container{
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: rgba(21, 28, 35, 1.0);
+    #blog-header {
+      color: rgba(0, 120, 191, 1.0);
+      width: 20%;
+      height: 100%;
+      line-height: 1;
+      padding: 0 40px 40px;
+      h2{
+        width: 20%;
+      }
+    }
+    .blog-post{
+      border: 1px solid rgba(238, 238, 238, 1.0);
+      width: 38%;
+      padding: 10px 40px 40px;
+      height: 400px;
+      transition: 1s ease all;
+      position: relative;
+      h1 {
+        margin-bottom: 20px;
+        font-size: 25px;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .read-more {
+        color: rgba(0, 120, 191, 1.0);
+        position: absolute;
+        bottom: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid;
+      }
+    }
+    .blog-post:hover {
+      background-color: rgba(0, 59, 102, 1.0);
+      color: rgba(238, 238, 238, 1.0);
+      a {
+        color: rgba(238, 238, 238, 1.0);
+
+      }
+    }
+  }
+
+  #blog-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 25%;
+    background-image: url('./images/succulent.jpeg');
+    background-size: cover;
+  }
+  .next{
+    color: white;
+    z-index: 10;
+    bottom: 40px;
+  }
+
+}

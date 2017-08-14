@@ -1,4 +1,4 @@
-//add scroll
+@import 'variables';
 
 #header {
   // width: 100%;
@@ -10,13 +10,12 @@
 
   #header-image{
     background-image: url('./images/plantsss.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-x: -5px;
     position: relative;
     width: 60%;
-    height: 100%;
+    height: 90%;
     margin: 0 auto;
 
   }

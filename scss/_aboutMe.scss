@@ -8,7 +8,6 @@
   .half{
     float: left;
     position: relative;
-    margin: 50px 0;
   }
   .left {
     width: 40%;
@@ -37,13 +36,7 @@
     bottom: 80px;
 
   }
-  p {
-    font-family: $sans-serif;
-    letter-spacing: 1.2px;
-    position: absolute;
-    bottom: 70px;
 
-  }
   // article{
   //   width: 70%;
   // }
@@ -62,7 +55,7 @@
     text-align: left;
     position: absolute;
     left: 0;
-    bottom: 140px;
+    bottom: 200px;
     width: 70%;
   }
   .colored-box {
@@ -95,5 +88,8 @@
     left: 10%;
     top: 6%;
     background-color: rgba(28, 51, 53, 1.0);
+  }
+  .next {
+    bottom: 50px;
   }
 }
