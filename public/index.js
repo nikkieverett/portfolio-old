@@ -16,12 +16,18 @@ function slideDown(e) {
   page.onclick = '';
   self = e.target.parentNode;
   var offset = self.getBoundingClientRect();
-  var scroll = self.offsetTop;
+  console.log(offset);
+  var scroll = self.offsetTop+150;
+  console.log(scroll);
 
   // CSS Transition slide.
-  page.style.top = (-offset.height-offset.top) + 'px';
+  page.style.top = (-offset.height-150-offset.top)+ 'px';
+    console.log(page.style.top);
+
+    // console.log('offset.top', offset.top, 'offset.height', offset.height, 'offsetTop', self.offsetTop);
 
   setTimeout(function () {
+    // let position = offset.height-150;
     // Reposition the real scrollbar.
     page.style.transition = 'none';
     page.style.top = '';

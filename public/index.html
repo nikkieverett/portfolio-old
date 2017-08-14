@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <title>nikki everett</title>
     <link rel="stylesheet" href="index.css" />
-    <link href="https://fonts.googleapis.com/css?family=Prata|Quicksand:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prata|Montserrat:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <!-- <link rel="stylesheet" href="animate.min.css"> -->
   </head>
   <body>
     <div id="page">
@@ -38,41 +37,109 @@
               I'm a Texan born and raised, and a graduate of The Iron Yard's Front-End Engineering course. Learning is, and always will be my passion, and that's why I chose a career in development.
               <br />
               <br />
-
               I am most motivated by my need for creativity. I want to make things that are not only beautiful but also useful. Whether that's through photography, carpentry, sculpture, gardening, or web development, I find my drive when there's a problem that needs to be solved.
             </p>
             <br />
-
             <h3>I like plants.</h3>
               <!-- <div class="button">download resume</div> -->
           </div>
-
         </div>
         <div class="previous"></div>
         <div class="next"></div>
       </section>
       <section class="page-container" id="portfolio">
-        <h2>recent projects</h2>
+        <div id="portfolio-header">
+          <h2>recent projects</h2>
+        </div>
         <div class="flex-container">
-          <a href="https://not-yo-mamas-recipes.herokuapp.com/" target="_blank">
-            <div id="image1"></div>
-          </a>
-          <a href="https://classmaxapp.com/" target="_blank">
-            <div id="image3"></div>
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=com.thehaps&hl=en" target="_blank">
-            <div id="image2"></div>
-          </a>
-
+          <div class="project-large">
+            <a href="https://classmaxapp.com/" target="_blank">
+              <div id="image1" class="portfolio-image large-image"></div>
+            </a>
+            <div class="portfolio-desc">
+              <p><strong>ClassMax</strong> is a teacher portal with the goal of bringing classrooms into the 21st century. It helps maximize teacher performace by giving them a tool to track and monitor academic progress, daily behavior, and differentiated accomodations. I participated in a small remote group of developers to design and enhance the user interface and over all user experience of this app.</p>
+              <div class="tag">html</div>
+              <div class="tag">css</div>
+              <div class="tag">bootstrap</div>
+              <div class="tag">react</div>
+              <div class="tag">ui/ux</div>
+            </div>
+          </div>
+          <div class="project-small">
+            <a href="https://play.google.com/store/apps/details?id=com.thehaps&hl=en" target="_blank">
+              <div id="image2" class="portfolio-image small-image"></div>
+            </a>
+            <div class="portfolio-desc">
+              <p><strong>The Haps</strong> is a mobile app designed to show you all the best live events currently happening near you. Built using the google maps api and react native.</p>
+              <div class="tag">html</div>
+              <div class="tag">sass</div>
+              <div class="tag">react native</div>
+              <div class="tag">ui/ux</div>
+            </div>
+          </div>
+          <div class="project-small">
+            <a href="https://www.poopourri.com/" target="_blank">
+              <div id="image3" class="portfolio-image small-image"></div>
+            </a>
+            <div class="portfolio-desc">
+              <p id="ppp"><strong>Poopourri</strong> is an international ecommerce site for all natural bathroom products. </p>
+              <div class="tag">html</div>
+              <div class="tag">sass</div>
+              <div class="tag">react</div>
+              <div class="tag">ui/ux</div>
+            </div>
+          </div>
+          <div class="project-large">
+            <a hrepoof="https://not-yo-mamas-recipes.herokuapp.com/" target="_blank">
+              <div id="image4" class="portfolio-image large-image"></div>
+            </a>
+            <div class="portfolio-desc">
+              <p><strong>Not Yo Mama's Recipes</strong> is a personal recipe storage app. I built it for my mom to store her recipes in; partly for selfish reasons (i.e. so that I could have access to them) and partly for non-selfish reasons (i.e. so that other people could have access to them). I built this app from scratch including front-end, back-end, database, user-interface, and also handled deployment.</p>
+              <div class="tag">html</div>
+              <div class="tag">sass</div>
+              <div class="tag">react</div>
+              <div class="tag">redux</div>
+              <div class="tag">mongo db</div>
+              <div class="tag">express</div>
+              <div class="tag">heroku</div>
+              <div class="tag">ui/ux</div>
+            </div>
+          </div>
         </div>
         <div class="previous"></div>
         <div class="next"></div>
       </section>
-    </div>
-    <!-- <script src="path/to/js/gsap/TweenMax.min.js"></script> -->
-    <!-- <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script> -->
-    <script src="index.js"></script>
+      <section class="page-container" id="blog">
+        <div class="blog-flex-container">
+          <div id="blog-header">
+            <h2>from my blog</h2>
+          </div>
+          <div class="blog-post">
+            <h1>Hello world.</h1>
+            <p>
+              As an aspiring developer, I think it’s fitting to begin my blogging journey with that all too familiar phrase. Who would have thought a sentence made up of two words could encompass such a broad range of emotion; those feelings of terror and simultaneous excitement...
+            </p>
+            <div class="read-more">
+              <a href="https://medium.com/@nikki.everett/hello-world-636e04f6512f">read more</a>
+            </div>
+          </div>
+          <div class="blog-post">
+            <h1>How to Avoid Falling into the Abyss of Things You Don’t Know: An Introspective Journey</h1>
+            <p>
+              Each day is like a good pair of pants.. you must put them on one leg at a time. — Me
+            </p>
+            <div class="read-more">
+              <a href="https://medium.com/@nikki.everett/how-to-avoid-falling-into-the-abyss-of-things-you-dont-know-an-introspective-journey-ac077ef872cc">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="next"></div>
+        <div id="blog-image">
 
+        </div>
+      </section>
+    </div>
+    <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>

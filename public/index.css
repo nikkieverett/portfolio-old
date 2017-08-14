@@ -42,34 +42,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-nav {
-  padding: 40px; }
-  nav a {
-    text-decoration: none;
-    color: #393939; }
-  nav .page-links {
-    margin-top: 40px; }
-    nav .page-links li {
-      padding: 20px;
-      position: relative;
-      text-transform: uppercase;
-      font-size: 12px;
-      font-weight: bold; }
-      nav .page-links li a::before {
-        content: "";
-        position: absolute;
-        left: -3px;
-        top: 10px;
-        background-color: 2px solid rgba(171, 46, 120, 0.7);
-        width: 6px;
-        transition-duration: .2s;
-        -webkit-transition-duration: .2s; }
-      nav .page-links li a:hover::before, nav .page-links li .clicked::before {
-        width: 130px;
-        height: 30px;
-        background-color: rgba(171, 46, 120, 0.7);
-        color: white; }
-
 #header {
   color: #424f27;
   position: relative;
@@ -78,13 +50,12 @@ nav {
   padding-bottom: 100px; }
   #header #header-image {
     background-image: url("./images/plantsss.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-x: -5px;
     position: relative;
     width: 60%;
-    height: 100%;
+    height: 90%;
     margin: 0 auto; }
   #header .colored-box {
     width: 30%;
@@ -109,7 +80,7 @@ nav {
     #header .header-text h2 {
       font-size: 35px;
       font-weight: 300;
-      font-family: "Quicksand", sans-serif; }
+      font-family: "Montserrat", sans-serif; }
     #header .header-text h3 {
       background-color: black;
       display: inline-block;
@@ -117,7 +88,7 @@ nav {
       font-size: 13px;
       margin: 20px 70px 20px;
       letter-spacing: 10px;
-      font-family: "Quicksand", sans-serif;
+      font-family: "Montserrat", sans-serif;
       color: white; }
 
 #about-me {
@@ -125,8 +96,7 @@ nav {
   color: #1c3335; }
   #about-me .half {
     float: left;
-    position: relative;
-    margin: 50px 0; }
+    position: relative; }
   #about-me .left {
     width: 40%;
     height: 100%; }
@@ -144,15 +114,10 @@ nav {
     margin: 0;
     font-family: "Prata", serif; }
   #about-me h3 {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: bold;
     bottom: 80px; }
-  #about-me p {
-    font-family: "Quicksand", sans-serif;
-    letter-spacing: 1.2px;
-    position: absolute;
-    bottom: 70px; }
   #about-me .large-left-image-column {
     width: 80%;
     height: 100vh;
@@ -167,7 +132,7 @@ nav {
     text-align: left;
     position: absolute;
     left: 0;
-    bottom: 140px;
+    bottom: 200px;
     width: 70%; }
   #about-me .colored-box {
     background-color: #1c3335;
@@ -193,97 +158,173 @@ nav {
     left: 10%;
     top: 6%;
     background-color: #1c3335; }
-
-.container {
-  display: flex;
-  flex-direction: row;
-  margin-right: 100px;
-  width: 100%;
-  padding: 20px; }
-  .container h2 {
-    display: block;
-    margin-right: 80px; }
-  .container h3 {
-    margin: 20px; }
-
-.front-end, .back-end, .tools {
-  text-align: center;
-  margin: 30px;
-  width: 31%; }
-
-.skill {
-  width: 100%;
-  height: 30px;
-  border-radius: 100px;
-  background-image: url(./images/bg-color.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 3%;
-  background-position: center;
-  position: relative;
-  text-align: left;
-  line-height: 35px;
-  padding-left: 20px;
-  color: white;
-  letter-spacing: 3px;
-  overflow: visible;
-  box-shadow: inset 1px 1px 1px 1px #f6f6f6;
-  display: inline-block; }
-
-#js, #react, #express, #github {
-  background-position-x: -100px; }
-
-#mongo, #terminal, #heroku, #firebase {
-  background-position-x: -150px; }
-
-#node {
-  background-position-x: -200px; }
-
-h4 {
-  display: inline-block; }
+  #about-me .next {
+    bottom: 50px; }
 
 #portfolio {
   width: 100%;
+  height: 100%;
   color: white;
   text-align: center;
-  letter-spacing: 0.26px;
-  background-color: #4e8594; }
+  letter-spacing: 0.26px; }
   #portfolio h2 {
-    margin-bottom: 30px;
-    text-align: center;
-    display: block;
     font-size: 70px;
     font-weight: 600;
-    margin: 0;
-    font-family: "Prata", serif;
-    margin: 0 auto; }
+    font-family: "Prata", serif; }
+  #portfolio p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    padding-bottom: 10px; }
+    #portfolio p strong {
+      font-weight: 700;
+      margin-right: 5px; }
+  #portfolio #portfolio-header {
+    background-color: #244f67;
+    display: inline-block;
+    padding: 15px 35px;
+    margin: 40px auto;
+    text-align: center;
+    position: relative; }
+  #portfolio #portfolio-header::before {
+    content: '';
+    position: absolute;
+    left: -150px;
+    top: 50%;
+    width: 200px;
+    height: 20px;
+    background-color: #244f67; }
+  #portfolio #portfolio-header::after {
+    content: '';
+    position: absolute;
+    right: -150px;
+    top: 50%;
+    width: 200px;
+    height: 20px;
+    background-color: #244f67; }
+  #portfolio .next {
+    bottom: 20px;
+    color: #244f67; }
 
 .flex-container {
   display: flex;
   justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
   width: 100%; }
-  .flex-container a {
-    width: 15%;
-    margin: 5%; }
-
-#image1, #image2, #image3 {
-  width: 100%;
-  height: 200px;
-  border: 5px solid white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 200px; }
+  .flex-container .project-large {
+    width: 70%;
+    height: 100%;
+    margin: 20px;
+    overflow: auto; }
+  .flex-container .project-small {
+    width: 34%;
+    height: 100%;
+    margin: 20px;
+    overflow: auto; }
+  .flex-container .portfolio-image {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    transition: 1s ease;
+    height: 400px;
+    width: 100%; }
+  .flex-container .portfolio-image:hover {
+    cursor: pointer;
+    filter: none;
+    -webkit-filter: grayscale(0); }
+  .flex-container .portfolio-desc {
+    text-align: left;
+    line-height: 1.6;
+    background-color: white;
+    color: #244f67;
+    padding: 20px; }
+  .flex-container .project-small .portfolio-desc {
+    height: 120px; }
+  .flex-container #ppp {
+    margin-bottom: 20px; }
 
 #image1 {
-  background-image: url("./images/project1.png");
-  background-position-x: -62px; }
+  background-image: url("./images/project2.png"); }
 
 #image2 {
-  background-image: url("./images/project4.png"); }
+  background-image: url("./images/project3.png");
+  background-size: cover; }
 
 #image3 {
-  background-image: url("./images/project5.png"); }
+  background-image: url("./images/project4.png"); }
+
+#image4 {
+  background-image: url("./images/project1.png");
+  background-position-y: 5px; }
+
+.tag {
+  border: 2px solid #408193;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: inline-block;
+  color: #333333;
+  font-family: "Montserrat", sans-serif; }
+
+#blog .blog-flex-container {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #151c23; }
+  #blog .blog-flex-container #blog-header {
+    color: #0078bf;
+    width: 20%;
+    height: 100%;
+    line-height: 1;
+    padding: 0 40px 40px; }
+    #blog .blog-flex-container #blog-header h2 {
+      width: 20%; }
+  #blog .blog-flex-container .blog-post {
+    border: 1px solid #eeeeee;
+    width: 38%;
+    padding: 10px 40px 40px;
+    height: 400px;
+    transition: 1s ease all;
+    position: relative; }
+    #blog .blog-flex-container .blog-post h1 {
+      margin-bottom: 20px;
+      font-size: 25px; }
+    #blog .blog-flex-container .blog-post a {
+      color: inherit;
+      text-decoration: none; }
+    #blog .blog-flex-container .blog-post .read-more {
+      color: #0078bf;
+      position: absolute;
+      bottom: 20px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: 1px solid; }
+  #blog .blog-flex-container .blog-post:hover {
+    background-color: #003b66;
+    color: #eeeeee; }
+    #blog .blog-flex-container .blog-post:hover a {
+      color: #eeeeee; }
+
+#blog #blog-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 25%;
+  background-image: url("./images/succulent.jpeg");
+  background-size: cover; }
+
+#blog .next {
+  color: white;
+  z-index: 10;
+  bottom: 40px; }
 
 h2 {
   margin: 30px; }
@@ -318,7 +359,7 @@ h2 {
   background-position-x: -40px;
   background-position-y: -380px; }
 
-#about-me h2 {
+#about-me h2, #blog h2, #contact h2 {
   position: absolute;
   text-align: left;
   font-size: 70px;
@@ -326,13 +367,13 @@ h2 {
   margin: 0;
   font-family: "Prata", serif; }
 
-#about-me h3 {
-  font-family: "Quicksand", sans-serif;
+#about-me h3, #blog h3, #contact h3 {
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: bold; }
 
-#about-me p {
-  font-family: "Quicksand", sans-serif;
+#about-me p, #blog p, #contact p {
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 1.2px; }
 
 body {
@@ -340,7 +381,8 @@ body {
   padding: 0;
   font-family: "Prata", serif;
   font-weight: 300;
-  position: relative; }
+  position: relative;
+  background-color: #eeeeee; }
 
 #page {
   position: absolute;
@@ -351,17 +393,38 @@ body {
 section {
   height: 100vh;
   position: relative;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box; }
+  margin-bottom: 150px; }
 
 .next {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -36px;
+  bottom: 150px;
+  right: 50px;
   cursor: pointer;
-  font-size: 400%; }
+  font-size: 300%;
+  border: 2px solid;
+  border-radius: 100px;
+  padding: 30px 20px 10px;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 0 rgba(204, 169, 44, 0.4); }
 
 .next:after {
   content: '▼'; }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4); }
+  70% {
+    -webkit-box-shadow: 0 0 0 20px rgba(204, 169, 44, 0); }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0); } }
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4); }
+  70% {
+    -moz-box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 20px rgba(204, 169, 44, 0); }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0); } }
