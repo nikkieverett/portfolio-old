@@ -161,31 +161,32 @@ table {
   #about-me .next {
     bottom: 50px; }
 
-#portfolio {
+#portfolio, #portfolio2 {
   width: 100%;
   height: 100%;
   color: white;
   text-align: center;
-  letter-spacing: 0.26px; }
-  #portfolio h2 {
+  letter-spacing: 0.26px;
+  margin-bottom: 0; }
+  #portfolio h2, #portfolio2 h2 {
     font-size: 70px;
     font-weight: 600;
     font-family: "Prata", serif; }
-  #portfolio p {
+  #portfolio p, #portfolio2 p {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     padding-bottom: 10px; }
-    #portfolio p strong {
+    #portfolio p strong, #portfolio2 p strong {
       font-weight: 700;
       margin-right: 5px; }
-  #portfolio #portfolio-header {
+  #portfolio #portfolio-header, #portfolio2 #portfolio-header {
     background-color: #244f67;
     display: inline-block;
     padding: 15px 35px;
     margin: 40px auto;
     text-align: center;
     position: relative; }
-  #portfolio #portfolio-header::before {
+  #portfolio #portfolio-header::before, #portfolio2 #portfolio-header::before {
     content: '';
     position: absolute;
     left: -150px;
@@ -193,7 +194,7 @@ table {
     width: 200px;
     height: 20px;
     background-color: #244f67; }
-  #portfolio #portfolio-header::after {
+  #portfolio #portfolio-header::after, #portfolio2 #portfolio-header::after {
     content: '';
     position: absolute;
     right: -150px;
@@ -201,9 +202,15 @@ table {
     width: 200px;
     height: 20px;
     background-color: #244f67; }
-  #portfolio .next {
-    bottom: 20px;
+  #portfolio .next#first, #portfolio2 .next#first {
+    bottom: 250px;
     color: #244f67; }
+  #portfolio .next#second, #portfolio2 .next#second {
+    bottom: 450px;
+    color: #244f67; }
+
+#portfolio2 {
+  margin-bottom: 100px; }
 
 .flex-container {
   display: flex;
@@ -311,20 +318,32 @@ table {
     #blog .blog-flex-container .blog-post:hover a {
       color: #eeeeee; }
 
-#blog #blog-image {
+#blog-image {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
-  height: 25%;
+  height: 3%;
   background-image: url("./images/succulent.jpeg");
-  background-size: cover; }
-
-#blog .next {
-  color: white;
-  z-index: 10;
-  bottom: 40px; }
+  background-size: cover;
+  padding-top: 100px; }
+  #blog-image .copyright {
+    float: left;
+    margin-left: 100px; }
+  #blog-image .contact {
+    float: right;
+    margin-right: 100px; }
+    #blog-image .contact .info {
+      float: left;
+      margin-right: 20px; }
+      #blog-image .contact .info a {
+        color: white;
+        text-decoration: none; }
 
 h2 {
   margin: 30px; }
